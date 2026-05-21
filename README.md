@@ -146,3 +146,4 @@ npm publish --access public
 ## License
 
 MIT
+# goodlinks-mcp
