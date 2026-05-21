@@ -1,5 +1,9 @@
 # goodlinks-mcp
 
+[![npm version](https://img.shields.io/npm/v/goodlinks-mcp)](https://www.npmjs.com/package/goodlinks-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/goodlinks-mcp)](https://www.npmjs.com/package/goodlinks-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that connects Claude to the [GoodLinks](https://goodlinks.app) read-later app on macOS. Ask Claude to search your reading list, summarise articles, manage tags, export highlights, and more — all from a Claude conversation.
 
 ## Prerequisites
@@ -40,7 +44,15 @@ If you use a non-default port, add `"GOODLINKS_PORT": "9999"` to the `env` block
 
 Restart Claude Desktop and you should see the GoodLinks tools available.
 
-### From source (local clone)
+### Global install
+
+```bash
+npm install -g goodlinks-mcp
+```
+
+Then use `goodlinks-mcp` instead of `npx goodlinks-mcp` in the config above.
+
+### From source
 
 ```bash
 git clone https://github.com/lcajigasm/goodlinks-mcp.git
@@ -133,15 +145,6 @@ Then configure Claude Desktop:
 - Restart Claude Desktop after editing the config file
 - Validate the JSON in `claude_desktop_config.json` (a trailing comma will break it)
 - Run `npx goodlinks-mcp` manually in a terminal to check for Node errors
-
-## Publishing to npm
-
-```bash
-npm login
-npm publish --access public
-```
-
-> Make sure you've run `npm run build` first and that the `dist/` folder is present.
 
 ## License
 
