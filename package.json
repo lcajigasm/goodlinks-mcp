@@ -21,6 +21,14 @@
     "reading-list",
     "bookmarks"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lcajigasm/goodlinks-mcp.git"
+  },
+  "homepage": "https://github.com/lcajigasm/goodlinks-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/lcajigasm/goodlinks-mcp/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=18"

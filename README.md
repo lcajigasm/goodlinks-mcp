@@ -43,7 +43,7 @@ Restart Claude Desktop and you should see the GoodLinks tools available.
 ### From source (local clone)
 
 ```bash
-git clone https://github.com/your-username/goodlinks-mcp.git
+git clone https://github.com/lcajigasm/goodlinks-mcp.git
 cd goodlinks-mcp
 npm install
 npm run build
@@ -146,4 +146,3 @@ npm publish --access public
 ## License
 
 MIT
-# goodlinks-mcp
